@@ -176,12 +176,12 @@ unsigned long debounce[9] = {0,0,0,0,0,0,0,0,0};
  ******************************************************/
 void setup() {
 
-//#ifdef DEBUG
+#ifdef DEBUG
 	// Begin serial communication for debugging
 	Serial.begin(115200);
 	delay(1000);
 	Serial.println(F("---- Starting Sequencer ----"));
-//#endif //DEBUG
+#endif //DEBUG
 
 	// Setup buttons and switches as inputs
 	pinMode(BT_MENU, INPUT_PULLUP);
